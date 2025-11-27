@@ -18,11 +18,15 @@
         <div class="line line-4"></div>
     </div>
 
-    <!-- Header -->
     <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">Mateo Agüero</div>
+    <div class="container">
+        <div class="header-content">
+
+            <div class="logo">
+                <img src="images/Mateo Agüero.png" alt="Logo de Mateo Agüero">
+            </div>
+
+            <div class="nav-oval">
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#services">Servicios</a></li>
@@ -30,10 +34,16 @@
                     <li><a href="#about">Sobre mí</a></li>
                     <li><a href="#contact">Contacto</a></li>
                 </ul>
-                <div class="country-flag"></div>
             </div>
+
+            <div class="country-flag">
+                <img src="images/Argentina.png">
+            </div>
+
         </div>
-    </header>
+    </div>
+</header>
+
 
     <!-- Hero Section -->
     <section id="home" class="hero">
@@ -271,6 +281,33 @@
                 });
             });
         });
+
+      
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".nav-links a");
+
+window.addEventListener("scroll", () => {
+    let current = "";
+
+    sections.forEach(section => {
+        const top = window.scrollY;
+        const offset = section.offsetTop - 150;
+        const height = section.offsetHeight;
+
+        if (top >= offset && top < offset + height) {
+            current = section.getAttribute("id");
+        }
+    });
+
+    navLinks.forEach(a => {
+        a.classList.remove("active");
+        if (a.getAttribute("href") === "#" + current) {
+            a.classList.add("active");
+        }
+    });
+});
+
+
     </script>
 </body>
 </html>
