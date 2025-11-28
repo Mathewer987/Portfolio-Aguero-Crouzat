@@ -11,7 +11,6 @@
             --border-radius: 16px;
         }
 
-        /* Estilos generales */
         * {
             margin: 0;
             padding: 0;
@@ -44,7 +43,6 @@
             color: var(--text-dark);
         }
 
-        /* Fondo con líneas diagonales */
         .background-lines {
             position: fixed;
             top: 0;
@@ -108,7 +106,6 @@
             }
         }
 
-        /* Header */
         header {
             background-color: transparent;
             padding: 20px 0;
@@ -147,11 +144,19 @@
 
 .nav-oval {
     background-image: url("images/ovalo.png");
-    background-size: 100% 100%;   /* ocupa el contenedor */
+    background-size: 100% 100%;   
     background-repeat: no-repeat;
 
-    width: 524px;   /* ancho real de tu imagen */
-    height: 34px;   /* alto real de tu imagen */
+    position: absolute;
+  left: 51.5%;
+  transform: translateX(-50%);
+  width: 560px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
 }
 
 
@@ -178,7 +183,6 @@
 }
 
 
-        /* Hero Section */
         .hero {
             padding-top: 150px;
             padding-bottom: 100px;
@@ -268,7 +272,6 @@
             background-color: rgba(0,0,0,0.02);
         }
 
-        /* Hero Right Column */
         .hero-right {
             display: flex;
             flex-direction: column;
@@ -317,13 +320,12 @@
             font-style: italic;
         }
 
-        /* Services Section */
         .services-grid {
             display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columnas iguales */
-  gap: 20px;                             /* espacio entre tarjetas */
-  justify-content: center;               /* centra el grid horizontalmente */
-  max-width: 600px;                      /* un ancho máximo para que no se expanda mucho */
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 20px;                             
+  justify-content: center;               
+  max-width: 600px;                      
   margin: 0 auto; 
         }
 
@@ -361,7 +363,6 @@
 
        
 
-        /* Projects Section */
         .projects-list {
             display: flex;
             flex-direction: column;
@@ -437,7 +438,6 @@
             background-color: #f1f5f9;
         }
 
-        /* About Section */
         .about-content {
             display: grid;
             grid-template-columns: 1fr 300px;
@@ -467,7 +467,6 @@
             font-size: 0.9rem;
         }
 
-        /* Contact Section */
         .contact-cards {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -505,7 +504,6 @@
             font-weight: 600;
         }
 
-        /* Footer */
         footer {
             background-color: var(--white);
             padding: 40px 0;
@@ -538,7 +536,6 @@
             font-size: 0.9rem;
         }
 
-        /* Responsive */
         @media (max-width: 992px) {
             .hero-content {
                 grid-template-columns: 1fr;
@@ -624,17 +621,13 @@
 
 }
 
-/* ---------------------------- */
-/*        BARRA DE TECH         */
-/* ---------------------------- */
-
 .tech-bar span {
     font-family: "Inria Serif", serif !important;
 }
 
 .tech-bar {
     width: 100%;
-    background: rgba(255, 255, 255, 0.5 ); /* 70% opaco */
+    background: rgba(255, 255, 255, 0.5 ); 
     padding: 12px 0;    
     margin: 40px 0 60px;
     display: flex;
@@ -646,9 +639,7 @@
     box-shadow: 0 4px 20px rgba(0,0,0,0.05);
 }
 
-/* ---------------------------- */
-/*      FOTO + TEXTO            */
-/* ---------------------------- */
+
 .hero-bottom {
     display: flex;
     align-items: center;
@@ -657,7 +648,7 @@
 
 .hero-photo {
     position: relative;
-  left: 150px;  /* Mueve la foto 20px a la derecha */
+  left: 150px;  
   width: 220px;
   height: 220px;
   border-radius: 50%;
@@ -678,8 +669,8 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin-top: 0px;    /* ajusta altura respecto al párrafo */
-    max-width: 1000px;    /* ancho máximo del contenedor */
+    margin-top: 0px;    
+    max-width: 1000px;    
 }
 
 .btn-primary {
@@ -710,42 +701,42 @@
 }
 
 .btn-icon {
-    width: 20px;   /* ancho deseado */
-    height: 20px;  /* alto deseado */
-    object-fit: contain; /* para que mantenga proporción */
+    width: 20px;   
+    height: 20px;  
+    object-fit: contain; 
 }
 
 .contactame {
     width: 158px;
     height: 35px;
-    background-color: #ffffff; /* azul */
-    color: #2885FF; /* texto blanco */
+    background-color: #ffffff; 
+    color: #2885FF; 
     border: none;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 8px;
     position: absolute;
-  top: 590px; /* modificá este valor */
+  top: 590px; 
   right: 200px;
 }
 
 .contactame:hover {
-    background-color: #ffffff; /* azul oscuro al hover */
+    background-color: #ffffff; 
 }
 
 .linkedin {
     width: 116px;
     height: 35px;
-    background-color: #2885FF; /* blanco */
-    color: #ffffff; /* texto azul */
+    background-color: #2885FF; 
+    color: #ffffff; 
     border: 1px solid #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 8px;
     position: absolute;
-  top: 590px; /* igual o diferente */
+  top: 590px; 
   right: 75px;
 }
 
@@ -754,22 +745,20 @@
 }
 
 .positioned-buttons {
-  position: relative; /* contenedor padre */
+  position: relative; 
 }
 
-/* Contenedor relativo para que los hijos absolutos se posicionen respecto a él */
 .hero-buttons-container {
     position: relative;
-    height: 100px; /* o el alto que necesites */
+    height: 100px; 
 }
 
-/* Botón comenzar proyecto con posición absoluta */
 .btn-primary.comenzar-proyecto {
     position: absolute;
     width: 314px;
     height: 54px;
-    top: -40px;   /* Ajusta esta propiedad para mover verticalmente */
-    left: 300px;  /* Ajusta esta propiedad para mover horizontalmente */
+    top: -40px;   
+    left: 300px; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -777,7 +766,6 @@
 }
 
 
-/* Testimonios dentro de #home */
 #home .testimonials {
   margin-top: 60px;
   padding: 40px 20px;
@@ -801,8 +789,8 @@ background-color: transparent;
 }
 
 .testimonial-card {
- width: 300px; /* el ancho fijo */
-  max-width: 300px; /* no crecerá más que eso */
+ width: 300px; 
+  max-width: 300px; 
   padding: 30px;
   border-radius: 12px;
   box-shadow: var(--shadow);
@@ -815,7 +803,6 @@ background-color: transparent;
   transition: all 0.3s ease;
 }
 
-/* Animación original */
 @keyframes visibleSway {
   0%, 100% {
     transform: translateX(0) rotate(0deg);
@@ -828,7 +815,6 @@ background-color: transparent;
   }
 }
 
-/* Animación hover */
 .testimonial-card:hover {
   animation: visibleSwayHover 3s ease-in-out infinite;
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
@@ -847,11 +833,10 @@ background-color: transparent;
   }
 }
 
-/* Aquí podes modificar tamaño de las tarjetas */
 
 
 #home .stars {
-  color: #f59e0b; /* amarillo */
+  color: #f59e0b; 
   font-size: 1.1rem;
   margin-bottom: 15px;
 }
@@ -870,7 +855,6 @@ background-color: transparent;
 }
 
 
-/* CONTENEDOR GENERAL EN DOS COLUMNAS */
 .project-card.new-layout {
     display: flex;
     gap: 25px;
@@ -881,7 +865,6 @@ background-color: transparent;
     align-items: center;
 }
 
-/* IMAGEN IZQUIERDA */
 .project-image-wrapper {
     width: 652px;
     height: 464px;
@@ -897,7 +880,6 @@ background-color: transparent;
     object-fit: cover;
 }
 
-/* DERECHA */
 .project-info {
     flex: 1;
     display: flex;
@@ -905,7 +887,6 @@ background-color: transparent;
     gap: 1px;
 }
 
-/* TITULO PRINCIPAL */
 .project-title {
     font-size: 2.35rem;
     font-weight: 800;
@@ -914,7 +895,6 @@ background-color: transparent;
 
     
 }
-/* DESCRIPCION */
 .project-description {
     font-size: 24px;
     color: #000000;
@@ -922,14 +902,12 @@ background-color: transparent;
     margin-top: 1px;
 }
 
-/* SUBTITULO */
 .project-subtitle {
     font-size: 1.2rem;
     color: #636363;
     margin: 0;
 }
 
-/* FILA DE PASTILLAS AZULES */
 .project-tech-row {
     display: flex;
     gap: 12px;
@@ -937,7 +915,6 @@ background-color: transparent;
     margin: 10px 0;
 }
 
-/* PASTILLA AZUL */
 .pill-blue {
     background: #2885FF;
     color: white;
@@ -958,14 +935,12 @@ background-color: transparent;
 
 
 
-/* BOTONES */
 .project-buttons {
     display: flex;
     gap: 15px;
     margin-top: 10px;
 }
 
-/* BOTÓN BLANCO */
 .pill-white {
     display: inline-flex;
     align-items: center;
@@ -984,7 +959,6 @@ background-color: transparent;
     width: 22px;
 }
 
-/* BOTONES CON ICONOS */
 .btn-with-icon {
     text-decoration: none;
     cursor: pointer;
@@ -998,7 +972,7 @@ background-color: transparent;
 
 
 .about-image img {
-    width: 451.61px;      /* ajustá como quieras */
+    width: 451.61px;     
     border-radius: 510.82px;
     display: block;
 }
