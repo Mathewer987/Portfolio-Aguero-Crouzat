@@ -342,6 +342,10 @@
     line-height: 1.3;
 }
 
+#projects {
+  margin-top: -250px;
+}
+
         .service-card:hover {
             transform: translateY(-5px);
         }
@@ -439,6 +443,8 @@
     transform: translateY(-21px);
 
 }
+
+
 
         .about-text {   
              color: var(--text-gray);
@@ -1022,3 +1028,179 @@ background-color: transparent;
     border-radius: 510.82px;
     display: block;
 }
+
+.skills-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 180px;
+    margin-top: 80px;
+}
+
+.skills-box{
+    background: rgba(255,255,255,0.15);
+    padding: 30px 60px;
+    border-radius: 40px;
+    text-align: center;
+    color: white;
+    border: 2px solid rgba(255,255,255,0.2);
+    backdrop-filter: blur(0px);
+}
+
+.skills-box h3{
+    font-size: 35px;
+    margin-bottom: 20px;
+    color:#ff4a32;
+    font-family: "JejuHallasan", sans-serif; ;
+}
+
+.skills-box p{
+    font-size: 24px;
+    margin: 5px 0;
+}
+
+
+
+
+.silang-wrapper{
+  margin-left:95px; 
+  margin-top:-20px;
+  margin-bottom:130px;
+}
+
+.silang-title{
+  color:#FF4A32;
+  font-size:2.4rem;
+  font-weight:700;
+  margin:0 0 25px 0;
+}
+
+.silang-layout{
+  display:flex;
+  align-items:flex-start;
+  gap:60px;
+}
+
+.silang-images{
+  display:flex;
+  flex-direction:column;
+  gap:30px;
+}
+
+.silang-images img{
+  width:520px;
+  border-radius:14px;
+  object-fit:cover;
+}
+
+.silang-text-box{
+  width:420px;
+  border-radius:50px;
+  padding:25px;
+  border:3px solid rgba(255,255,255,0.35);
+  color:#fff;
+  line-height:1.55;
+  font-size:1.18rem;
+  margin-top:160px;
+  margin-left:40px;
+  background-image: url("images/marco.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.pankita-layout{
+    margin-top: 100px;
+    margin-left:95px; 
+    margin-bottom:130px;
+
+}
+
+.pankita-title{
+    font-size:2.4rem;
+    margin-bottom:40px;
+    margin-left:10px;
+    color:#ff4b4b;
+}
+
+.pankita-wrapper{
+    display:flex;
+    gap:120px; 
+    justify-content:flex-start;
+    align-items:center;
+}
+
+.pankita-img-box img{
+    border-radius:12px;
+    object-fit:cover;
+    display:block;
+}
+
+
+
+.infernorush-wrapper{
+  margin-left:95px; 
+  margin-top:-20px;
+  margin-bottom:-50px;
+}
+
+.infernorush-title{
+  color:#FF4A32;
+  font-size:2.4rem;
+  font-weight:700;
+  margin:0 0 25px 0;
+}
+
+.infernorush-layout{
+  display:flex;
+  align-items:flex-start;
+  gap:60px;
+}
+
+.infernorush-images{
+  display:flex;
+  flex-direction:column;
+  gap:30px;
+}
+
+.infernorush-images img{
+  width:520px;
+  border-radius:14px;
+  object-fit:cover;
+}
+
+.infernorush-text-box{
+  width:420px;
+  border-radius:50px;
+  padding:25px;
+  border:3px solid FF4A32;
+  color:#FF4A32;
+  line-height:1.55;
+  font-size:1.18rem;
+  margin-top:160px;
+  margin-left:40px;
+}
+
+.contact-container {
+    text-align: center; 
+    margin-top: 10px;
+}
+
+.contact-line {
+    display: inline-flex;       
+    align-items: center;        
+    gap: 15px;                 
+    margin-top: -40px;
+}
+
+
+
+.contact-line span {
+    font-size:30px;  
+        color: #fff;        
+
+}
+
+
+
